@@ -1,0 +1,130 @@
+﻿.header {
+    height: 60px;
+    border-bottom: 1px solid #cccccc;
+    background: #eee;
+    line-height: 60px;
+    font-size: 28px;
+    color: #FF4351;
+}
+.search { font-size: 14px; display: inline-block;
+    margin-left: 100px;
+}
+    .search input {
+        line-height: 30px;
+        font-size: 14px;
+        padding: 0 10px;
+        color: #333333;
+    }
+    .search input[type='button']{ padding: 0 30px;}
+    .person-list, .page-wrapper-cc {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .page-wrapper-cc,.container {
+        margin: 0 auto;
+    }
+    .page-wrapper {
+        position: fixed;
+        bottom: 0;
+        height: 60px;
+        left: 0;
+        width: 100%;
+    } .person-list .person {
+    float: left;
+    display: inline;
+    width: 200px;
+    margin: 10px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+    .imgwrapper {
+        overflow: hidden;
+    }
+        .person-list .person img {
+            max-width: 100%;
+             cursor: pointer;
+            -ms-transition: all 0.6s;
+            -o-transition: all 0.6s;
+            -webkit-transition: all 0.6s;
+            transition: all 0.6s;
+           
+        }
+.person-list .person:hover {
+    box-shadow: 0 0 5px #666;
+}
+
+            .person-list .person img:hover {
+                -ms-transform: scale(1.4);
+                -webkit-transform: scale(1.4);
+                transform: scale(1.4) translateY(10%);
+    
+            }
+
+.person-info {
+    padding: 6px;
+}
+        .person-info p {
+            font-size: 12px;
+            color: #333;
+            padding:4px 6px;
+            border-bottom: 1px solid #eee;
+            margin: 0;
+        }
+.person-info p  span.match {
+    color: #e61636;
+    background: yellow;
+}
+            .person-info p:last-child{ border-bottom: none;}
+            .person-info p label {
+                color: #666;
+                font-weight: normal;
+            }
+            .pages a, .pages .cpb {
+                text-decoration: none;
+                float: left;
+                padding: 0 5px;
+                border: 1px solid #ddd;
+                background: #ffff;
+                margin: 0 2px;
+                font-size: 11px;
+                color: #000;
+            }
+
+.button {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px 5px 0;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 3px;
+    padding: 0 30px;
+    background: white;
+    border: 1px solid #FF4351;
+    color: #FF4351;
+    cursor: pointer;
+}
+    .button:hover {
+        background: #FF4351;
+        color: #fff;
+    }
+    .button-green {
+        background-color: #44b549;
+    }
+/*清除浮动样式*/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+    clear: both;
+}
+
+  .pages a:hover { background-color: #E61636; color:#fff;border:1px solid #E61636; text-decoration:none;}
+  .pages .cpb { font-weight: bold; color: #fff; background: #E61636; border:1px solid #E61636;}

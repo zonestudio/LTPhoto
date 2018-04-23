@@ -1,0 +1,173 @@
+﻿html {
+    background: url("../background/p2.gif") no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.camera-area {
+    position: absolute;
+}
+
+.thumb {
+    width: 100%;
+    height: 100%;
+}
+
+.camera-up {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+a.file {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background: url("upload.png") center center no-repeat;
+    background-size: 120px 79px;
+}
+
+    a.file:hover {
+    }
+
+    a.file input {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 100px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        width: 100%;
+        height: 100%;
+    }
+
+.upload-progress {
+    position: fixed;
+    top: 56%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 9999999999999;
+    display: none;
+}
+
+    .upload-progress span {
+        color: #FFF;
+        font-size: 28px;
+    }
+
+.preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+    .preview img {
+        width: 100%;
+        height: 100%;
+    }
+
+.bt {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 20%;
+    display: none;
+}
+
+    .bt a {
+        
+    }
+    .share img {
+        max-width: 230px;
+        top: 40%;
+        left: 50%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+.button {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px 5px 0;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 3px;
+    padding: 0 30px;
+    background-color: #FF4351;
+    color: #fff;
+    border: none;
+}
+
+.button-green {
+    background-color: #44b549;
+}
+
+.uiform {
+    padding: 20px 16px;
+    background: rgba(255,255,255,.5);
+    padding-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #333;
+}
+    .uiform table {
+        width: 100%;
+    } .uiform th, .uiform td {
+        padding: 6px;
+        color: #666;
+        font-size: 12px;
+    }
+.uiform th {
+    color: #333;
+ 
+    text-align: right;
+}
+        .uiform td input {
+            border: 1px solid #999;
+            background: white;
+            border-radius: 3px;
+            color: #333;
+            padding: 0px 5px;
+            line-height: 30px;
+            outline: none;
+         
+        }
+
+            .uiform td input:active, .uiform td input:focus {
+                border: 1px solid #333;
+            }
+
+    .uiform .control {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .uiform h2 {
+        text-align: center;
+        font-size: 16px;
+        color: #FE4250;
+        padding: 0;
+        margin: 0;
+        line-height: 30px;
+    }
+    .uiform p.subtitle {
+        color: #666;
+        text-align: center;
+        font-size: 12px;
+        padding: 4px;
+    }
