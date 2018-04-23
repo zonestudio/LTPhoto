@@ -71,9 +71,11 @@ namespace LTPhoto.Helpers
 
         public static void Save(string xm, string mobile, string picture)
         {
+
             var sql = "INSERT INTO [UserPhotoSnap] (XM,Mobile,PhotoSnapPath, SnapTime) VALUES ('" + xm.Replace("'","\'") +
                         "', '" + mobile + "','"+picture+"','" + DateTime.Now + "')";
             SqlCeHelper.ExecuteNonQuery(CONNECTION_STRING, CommandType.Text, sql);
+
         }
 
         public static void Remove(string id)
