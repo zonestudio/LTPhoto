@@ -17,6 +17,7 @@ namespace LTPhoto
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            Response.Write("Total:"+LtDataHelper.GetTotal());
             var uinfo = Comm.GetCookie("__uinfo");
             if (!string.IsNullOrEmpty(uinfo))
             {

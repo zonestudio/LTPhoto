@@ -24,6 +24,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -97,7 +98,6 @@
     <Content Include="index.aspx" />
     <Content Include="js\upload.js" />
     <Content Include="js\zepto.min.js" />
-    <Content Include="sqlcompact\lt.sdf" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -142,6 +142,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="B64.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

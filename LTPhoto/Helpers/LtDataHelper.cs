@@ -20,8 +20,8 @@ namespace LTPhoto.Helpers
         
         static LtDataHelper()
         {
-            string ceDataFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sqlcompact/lt.sdf");
-            CONNECTION_STRING = $"Data Source={ceDataFilePath};encryption mode=platform default;Password=z@163.com;";
+//            string ceDataFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sqlcompact/lt.sdf");
+            CONNECTION_STRING = $"Data Source=|DataDirectory|lt.sdf;encryption mode=platform default;Password=z@163.com;";
             //初始化数据
             //var list = new string[1000];
             //var i = 0;
@@ -67,6 +67,13 @@ namespace LTPhoto.Helpers
             total = (int)SqlCeHelper.ExecuteScalar(CONNECTION_STRING, CommandType.Text, wsql.Replace("*", "COUNT(*) AS CT"));
 
             return SqlCeHelper.ExecuteDataset(CONNECTION_STRING, CommandType.Text, sql);
+        }
+
+        public static int GetTotal()
+        {
+            return Convert.ToInt32(SqlCeHelper.ExecuteScalar(CONNECTION_STRING, CommandType.Text,
+                "SELECT COUNT(*) AS CT FROM [UserPhotoSnap]"));
+
         }
 
         public static void Save(string xm, string mobile, string picture)

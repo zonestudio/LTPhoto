@@ -10,8 +10,8 @@
             o.error('格式不正确');
             this.value = '';
         } else {
-            var URL = URL || webkitURL;
-            var blob = URL.createObjectURL(file);
+            var url = URL || window.webkitURL;
+            var blob = url.createObjectURL(file);
             o.before(blob);
             o['loading'] = layer.open({
                 type: 2
@@ -88,7 +88,7 @@
     };
     function _ajaximg(base64, type, file) {
        
-
+        console.log('ajax image upload  start!');
         var fd = new FormData();//创建表单数据对象
         
         fd.append("base64Img", base64);//将文件添加到表单数据中
